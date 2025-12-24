@@ -1,0 +1,17 @@
+# Bytecode and cache files
+__pycache__/
+*.py[cod]
+
+# Generated build files
+dist/
+build/
+*.spec
+
+# Logs and temporary files
+*.log
+
+# OS-specific files
+.DS_Store  # macOS Finder files
+
+# Sensitive files or keys (UNCOMMENT BELOW IF APPLICABLE)
+# KEY.txt
