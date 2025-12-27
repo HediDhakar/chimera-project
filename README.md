@@ -27,7 +27,10 @@ This project includes the following payloads and simulations:
 
 6. **Persistence Mechanism (`persistenc.py`)**:
    - Adds Chimera to startup programs to ensure it runs automatically after reboot.
-
+     
+7. **ScreenSpy (`screenspy.py`)**:
+   - Captures a screenshot of the current screen and saves it to a designated directory (`screenshots`).
+   - Generates timestamped filenames for organizing captured images.
 ---
 
 ## **Tech Stack**
@@ -68,16 +71,6 @@ Follow these steps to set up Chimera on your local machine:
 ## **Usage**
 Upon running `chimera.py`, an interactive menu will appear. Use the menu to select a payload and execute it.
 
-### Example Menu:
-```plaintext
-[1] Run Keylogger
-[2] Run Ransomware Simulation
-[3] Decrypt Files
-[4] Enable Persistence Mechanism
-[5] Spam Popups
-[6] Steal Files
-[99] Exit Chimera
-```
 
 ### **Testing**
 You can use dummy files in a separate test directory to safely demonstrate ransomware and infostealer functionalities.
@@ -107,6 +100,13 @@ This tool is strictly intended for **educational purposes**. Do not use it for m
 - **Input**: Adds Chimera to system startup.
 - **Process**: Writes registry entries (Windows) or modifies `.bashrc` (Linux).
 - **Output**: Chimera runs automatically at startup.
+
+### **4. ScreenSpy (`screenspy.py`)**
+- **Input**: Automatically captures the current screen.
+- **Process**:
+   - Saves screenshots in a directory called `screenshots`.
+   - Uses timestamped filenames to organize images.
+- **Output**: A `.png` file containing the captured screenshot.
 
 ---
 
@@ -162,6 +162,6 @@ We welcome contributions to improve Chimera! Please follow these steps:
 ## **Contact**
 For questions, suggestions, or collaboration, feel free to contact me:
 - GitHub: [HediDhakar](https://github.com/HediDhakar)
-- Email: [[Your Email Address]]
+- Email: [hedidk63@gmail.com]
 
 ---
