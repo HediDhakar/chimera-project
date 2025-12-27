@@ -27,7 +27,10 @@ This project includes the following payloads and simulations:
 
 6. **Persistence Mechanism (`persistenc.py`)**:
    - Adds Chimera to startup programs to ensure it runs automatically after reboot.
-
+     
+7. **ScreenSpy (`screenspy.py`)**:
+   - Captures a screenshot of the current screen and saves it to a designated directory (`screenshots`).
+   - Generates timestamped filenames for organizing captured images.
 ---
 
 ## **Tech Stack**
@@ -97,6 +100,13 @@ This tool is strictly intended for **educational purposes**. Do not use it for m
 - **Input**: Adds Chimera to system startup.
 - **Process**: Writes registry entries (Windows) or modifies `.bashrc` (Linux).
 - **Output**: Chimera runs automatically at startup.
+
+### **4. ScreenSpy (`screenspy.py`)**
+- **Input**: Automatically captures the current screen.
+- **Process**:
+   - Saves screenshots in a directory called `screenshots`.
+   - Uses timestamped filenames to organize images.
+- **Output**: A `.png` file containing the captured screenshot.
 
 ---
 
